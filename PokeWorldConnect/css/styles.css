@@ -1,0 +1,44 @@
+/* css/styles.css */
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondos dinámicos para cada sección */
+[data-page="inicio"] {
+  background-image: url('../assets/images/inicio-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+}
+
+[data-page="usuarios"] {
+  background-image: url('../assets/images/usuarios-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
+
+[data-page="map"] {
+  background-image: url('../assets/images/map-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+[data-page="gallery"] {
+  background-image: url('../assets/images/gallery-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+/* Estilos del menú */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 59, 63, 0.9); /* Transparente para que combine con los wallpapers */
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
